@@ -29,7 +29,7 @@ public class Task2 {
             }
         };
 
-        Predicate<Integer> notNull = n -> n != null;
+        Predicate<Integer> notNull = n -> n!= null;
         Predicate<Integer> even = n -> n % 2 == 0;
 
         int sum = 0;
