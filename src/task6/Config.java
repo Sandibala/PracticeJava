@@ -24,7 +24,6 @@ public class Config implements Serializable {
     protected Object readResolve() throws ObjectStreamException {
         return getInstance();
     }
-
     private String appName = "MyApp";
 
     public String getAppName() {
