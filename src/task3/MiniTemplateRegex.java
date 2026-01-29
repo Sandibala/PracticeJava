@@ -9,7 +9,6 @@ public class MiniTemplateRegex {
     public static String render(String template, Map<String, Object> values) {
         Pattern pattern = Pattern.compile("\\$\\{([^{}:]+)(:([^{}]+))?}");
         Matcher matcher = pattern.matcher(template);
-
         StringBuffer result = new StringBuffer();
 
         while (matcher.find()) {

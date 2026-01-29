@@ -18,7 +18,6 @@ public class Main {
         Map<String, Object> data = new HashMap<>();
         data.put("name", name);
         data.put("balance", balance);
-
         String template = "Hello ${name}, balance = ${balance:0.00}";
         String output = render(template, data);
         System.out.println(output);
